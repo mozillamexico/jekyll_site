@@ -4,7 +4,7 @@ header .mozilla_container {
   position: relative;
 }
 
-.nav-mozilla .toggle {
+.nav-mozilla .toggle-mozilla {
   overflow: hidden;
   text-indent: 120%;
   white-space: nowrap;
@@ -150,7 +150,7 @@ a {
 }
 
 @media (min-width:1024px) {
-  .nav-mozilla .toggle {
+  .nav-mozilla .toggle-mozilla {
     display: none;
   }
 
