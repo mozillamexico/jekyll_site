@@ -2,23 +2,102 @@
 layout: default
 ---
 
-<style type="text/css" media="screen">
-  .container {
-    margin: 10px auto;
-    max-width: 600px;
-    text-align: center;
-  }
-  h1 {
-    margin: 30px 0;
-    font-size: 4em;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
-</style>
-
-<div class="container">
-  <h1>404</h1>
-
-  <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
-</div>
+    <style>
+      * { 
+        margin:0;
+        padding:0;
+      }  
+      @font-face 
+      {
+      font-family: 'ZillaSlab-SemiBold';
+      src: url('ZillaSlab-SemiBold.ttf');
+      }      
+      body
+      {
+        font-family:ZillaSlab-SemiBold;
+      }
+      h1 {
+        margin: 0 px 0;
+        font-size: 12em;
+        line-height: 0.5;
+        letter-spacing: -10px;
+         text-align:justify;
+      }
+      h2 {
+        margin: 15px 4;
+        font-size: 6em;
+        line-height: 1.7;
+        letter-spacing: 15px;
+        text-align:justify;
+      }
+      h3 {
+        margin: 7px 0;
+        font-size: 1.3em;
+        line-height: 1.5;
+        letter-spacing: 1px;
+        text-align:center;
+      }
+      h4 {
+        margin: 0 px 0;
+        font-size: 1em;
+        line-height: 1;
+        letter-spacing: -1px;
+        text-align:center;
+      }
+      a:link, a:visited {
+		  margin: -14.5px 0;      
+        background-color: #005e5e;
+        color: white;
+        padding: 10px 125px;
+        text-align: justify;
+        text-decoration: none;
+        display: inline-block;
+      }
+      a:hover, a:active {
+        background-color: #00458b;
+		}
+      #cabecera {
+        color:#00ffff;
+        background-color:#000;
+        padding:3px;
+      }
+      #contenedor {
+        margin:0 auto;
+        width:890px;
+      }
+      #der {
+        float:right;
+        padding:150px;
+        width:275px;
+        max-width: 600px;
+    	  text-align: center;
+      }
+      #izq {
+        float:left;
+        height:275px;
+       padding:15px;
+        width:280px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="contenedor">
+        <div id="cabecera">
+		  <p>@mozillamx</p>        
+        <!--<p>@mozillamx <img src="moz.png" width="400" height="100" align="top"></p>
+        <p>@mozillamx <img src="moz.png" style="max-width:100%;width:auto;height:auto;"></p>-->
+        
+      </div>
+      <div id="izq" class="container">
+        <img src="404.jpg"style="max-width:330%;width:auto;height:auto;">
+      </div>
+      <div id="der">
+         <img src="moz.png" style="max-width:75%;width:auto;height:auto;">
+        <h1>404</h1>
+		  <h2>¡UPS!</h2>
+		  <!--<h3>No encontrámos esta página.</h3></p>-->
+  		  <h4><a href=http://www.mozilla-mexico.org/>Inicio</a></h4>
+  		  </div>
+      </div>
+    </div>
+  </body>
