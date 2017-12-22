@@ -7,7 +7,7 @@
 @import url('https://fonts.googleapis.com/css?family=Zilla+Slab');
 @import url('css/mozilla.css');
 @import url('css/posts.css');
-@import url('css/footer.css');
+@import url('css/fontello.css');
 
 body {
   font-family: 'Zilla Slab', serif;
@@ -170,14 +170,49 @@ ul, ol {
   margin-left: 10px;
 }
 
+/* Footer */
 
+footer {
+  width: 100%;
+  background-color: black;
+}
+footer .container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding-bottom: 25px;
+}
+
+.mozillamx-logo {
+  background: #000 url('logo_mozillamexico_mcs_mini.png');
+  width: 56px;
+  height: 46px;
+  background-size: contain;
+}
+
+.socials {
+	width: 100%;
+	text-align: center;
+	font-size: 28px;
+}
+
+.socials a {
+	color: white;
+	text-decoration: none;
+}
 
 @media (min-width:480px) {
 
 }
 
 @media (min-width:768px) {
+	.socials {
+		width: auto;
+	}
 
+	footer .container {
+		justify-content: space-between;
+	}
 }
 
 @media (min-width:1024px) {
@@ -221,4 +256,10 @@ ul, ol {
   ul, ol {
     margin-left: 30px;
   }
+
+  /*.mozillamx-logo {
+    width: 56px;
+    height: 46px;
+    background-size: contain;
+  }*/
 }
