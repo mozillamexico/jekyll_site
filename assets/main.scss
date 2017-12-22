@@ -6,6 +6,7 @@
 @import url('https://fonts.googleapis.com/css?family=Fira+Sans');
 @import url('https://fonts.googleapis.com/css?family=Zilla+Slab');
 @import url('css/mozilla.css');
+@import url('css/posts.css');
 
 body {
   font-family: 'Zilla Slab', serif;
@@ -139,21 +140,12 @@ header {
   min-width: 260px;
   position: relative;
   top: -36%;
-  //transform: translateX(0%)
   width: 33%;
   z-index: 9;
   padding: 0;
   display: none;
   overflow-y: auto;
 }
-
-/*.sidebar-open {
-  transform: translateX(0%)
-}
-
-.sidebar-close {
-  transform: translateX(-101%);
-}*/
 
 nav.mozilla-mexico {
   margin: 5% 0 0 0;
@@ -168,6 +160,8 @@ ul, ol {
   list-style: none;
   margin-left: 10px;
 }
+
+
 
 @media (min-width:480px) {
 
@@ -208,7 +202,7 @@ ul, ol {
     font-size: 3.5em;
   }
   .toggle-mozillamx a, .close-mozillamx a {
-    padding: 16% 0 3% 12%;
+    padding: 16% 0 3% 34%;
   }
 
   ul, ol {
