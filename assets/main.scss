@@ -7,6 +7,7 @@
 @import url('https://fonts.googleapis.com/css?family=Zilla+Slab');
 @import url('css/mozilla.css');
 @import url('css/posts.css');
+@import url('css/footer.css');
 
 body {
   font-family: 'Zilla Slab', serif;
@@ -132,7 +133,7 @@ header {
 .sidebar {
   -webkit-transition: transform 600ms cubic-bezier(0.3, -0.5, 0.6, 1.1);
   transition: transform 600ms cubic-bezier(0.3, -0.5, 0.6, 1.1);
-  background: #000;
+  background: #fff;
   box-shadow: 3px 0 1px rgba(0, 0, 0, 0.2);
   left: 0;
   max-width: 600px;
@@ -151,9 +152,17 @@ nav.mozilla-mexico {
   margin: 5% 0 0 0;
 }
 
+nav.mozilla-mexico-menu li {
+  margin-bottom: 2%;
+}
+
 .nav-mozilla-mexico-menu li a {
-  color: white;
-  font-size: 18px;
+  color: #00458b;
+  font-size: 14px;
+  font-weight: bold;
+}
+.nav-mozilla-mexico-menu li:first-child {
+  text-decoration: underline;
 }
 
 ul, ol {
@@ -203,6 +212,10 @@ ul, ol {
   }
   .toggle-mozillamx a, .close-mozillamx a {
     padding: 16% 0 3% 34%;
+  }
+
+  .nav-mozilla-mexico-menu li a {
+    font-size: 20px;
   }
 
   ul, ol {

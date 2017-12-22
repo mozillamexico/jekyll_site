@@ -91,7 +91,7 @@
   function changeBackgroundColor() {
     console.log('Cambiar color..')
     var posts = $('.posts');
-    var colors = ['#00ffff', '#000000', '#ff4f5e', '#54ffbd', '#6e008b', '#005e5e', '#00458b','#959595'];
+    var colors = ['#00e5e5', '#000000', '#ff4f5e', '#43cc97', '#6e008b', '#005e5e', '#00458b','#959595'];
 
     $('.posts').each(function(index) {
       var color = colors[Math.floor(Math.random()*colors.length)];

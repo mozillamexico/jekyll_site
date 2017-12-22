@@ -28,12 +28,14 @@ github_username: tuxlan
 # homepage tiles
 tiles-source: posts # accepts "posts" or "pages"
 tiles-count: 6
+
 # Build settings
 markdown: kramdown
 theme: minima
 encoding: utf-8
 plugins:
   - jekyll-feed
+  - jekyll-paginate
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
