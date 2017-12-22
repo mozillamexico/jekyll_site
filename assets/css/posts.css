@@ -1,0 +1,45 @@
+.home {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+}
+
+.flexbox {
+  display: inline-block;
+  background-color: rgba(231,229,226,0.8);
+}
+
+.posts {
+  width: 90%;
+  margin: 0.3em auto;
+  padding: 5% 4%;
+  display: block;
+  background-color: rgba(255,79,94,0.8);
+  filter: blur(0.25px);
+}
+
+.posts h2 a {
+  color: white;
+}
+
+.posts span {
+  background-color: #00458b;
+  color: white;
+}
+
+@media (min-width:480px) {
+
+}
+
+@media (min-width:768px) {
+
+}
+
+@media (min-width:1024px) {
+  .posts {
+    width: 25%;
+    margin: 0.1em 0;
+    padding: 5% 4%;
+    display: inline-block;
+  }
+}

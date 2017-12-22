@@ -5,6 +5,7 @@
   function windowsSize() {return $(window).width();}
   $(document).ready(function(){
     width = windowsSize();
+    changeBackgroundColor();
   });
   $(window).resize(function() {
     //When page resize show the menue if is not responsive design
@@ -87,5 +88,15 @@
     display = false;
   });
 
+  function changeBackgroundColor() {
+    console.log('Cambiar color..')
+    var posts = $('.posts');
+    var colors = ['#00ffff', '#000000', '#ff4f5e', '#54ffbd', '#6e008b', '#005e5e', '#00458b','#959595'];
+
+    $('.posts').each(function(index) {
+      var color = colors[Math.floor(Math.random()*colors.length)];
+      $(this).css({'background-color': color});
+    })
+  }
 
 })();

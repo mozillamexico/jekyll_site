@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  {{ content }}
+  <div class="flexbox">
+    {% for post in site.posts %}
+      <div class="posts">
+        <h2>
+          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+        </h2>
+        {% if post.image %}<span class="image main"><img src="{{ site.baseurl }}/{{ post.image }}" alt="" /></span>{% endif %}
+        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+        <span class="post-meta">{{ post.date | date: date_format }}</span>
+      </div>
+    {% endfor %}
+  </div>
+</div>
